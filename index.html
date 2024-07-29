@@ -12,6 +12,7 @@
 <body>
 
     <header class="bg-primary text-white text-center py-5">
+                <img src="logo.png" alt="Logo" class="logo-overlay"> 
         <h1>Aplicativo de Sons do Alfabeto em Emakhuwa</h1>
         <p>Aprenda o alfabeto Emakhuwa com sons autênticos!</p>
     </header>
@@ -39,7 +40,7 @@
     </main>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Aplicativo de Sons do Alfabeto em Emakhuwa. Todos os direitos reservados.</p>
+         <p>&copy; <span id="year"></span> Aplicativo de Sons do Alfabeto em Emakhuwa. Todos os direitos reservados.</p>
     </footer>
 
     <!-- Bootstrap JS e dependências -->
@@ -47,6 +48,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- JS personalizado -->
-    <script src="app.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
